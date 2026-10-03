@@ -105,7 +105,7 @@ const [sentiment, setSentiment] = useState("");
   try {
     // Analyze sentiment automatically
     const sentimentResponse = await fetch(
-      "http://localhost:5000/api/ai/sentiment",
+      "https://nexora-ai-backend-p42m.onrender.com   /api/ai/sentiment",
       {
         method: "POST",
         headers: {
@@ -120,7 +120,7 @@ const [sentiment, setSentiment] = useState("");
     const sentimentData = await sentimentResponse.json();
 
     const response = await fetch(
-      "http://localhost:5000/api/complaints",
+      "https://nexora-ai-backend-p42m.onrender.com   /api/complaints",
       {
         method: "POST",
         headers: {
@@ -158,7 +158,7 @@ const [sentiment, setSentiment] = useState("");
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/ai/classify",
+        "https://nexora-ai-backend-p42m.onrender.com   /api/ai/classify",
         {
           method: "POST",
           headers: {
@@ -188,7 +188,7 @@ const [sentiment, setSentiment] = useState("");
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/ai/chat", {
+    const response = await fetch("https://nexora-ai-backend-p42m.onrender.com   /api/ai/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -212,7 +212,7 @@ const checkSentiment = async () => {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/ai/sentiment", {
+    const response = await fetch("https://nexora-ai-backend-p42m.onrender.com   /api/ai/sentiment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -235,7 +235,7 @@ const checkSentiment = async () => {
   const loadAnalytics = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/analytics"
+        "https://nexora-ai-backend-p42m.onrender.com   /api/admin/analytics"
       );
 
       const data = await response.json();
@@ -251,7 +251,7 @@ const checkSentiment = async () => {
     const loadAnalytics = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/admin/analytics"
+      "https://nexora-ai-backend-p42m.onrender.com   /api/admin/analytics"
     );
 
     const data = await response.json();
@@ -263,7 +263,7 @@ const checkSentiment = async () => {
 };
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/dashboard"
+        "https://nexora-ai-backend-p42m.onrender.com   /api/admin/dashboard"
       );
 
       const data = await response.json();
@@ -278,7 +278,7 @@ const checkSentiment = async () => {
   const loadComplaints = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/complaints"
+        "https://nexora-ai-backend-p42m.onrender.com   /api/complaints"
       );
 
       const data = await response.json();
@@ -293,7 +293,7 @@ const checkSentiment = async () => {
   const resolveComplaint = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/complaints/${id}/status`,
+        `https://nexora-ai-backend-p42m.onrender.com   /api/complaints/${id}/status`,
         {
           method: "PUT",
           headers: {
